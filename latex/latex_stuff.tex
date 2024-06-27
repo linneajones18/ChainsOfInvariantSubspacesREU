@@ -1,0 +1,55 @@
+ \documentclass[11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage[margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem*{example}{Example}
+\newtheorem*{remark}{Remark}
+\newtheorem*{remarks}{Remarks}
+
+\numberwithin{equation}{section}
+
+\newcommand{\ZZ}{\mathbb{Z}}
+
+
+
+
+\newcommand{\rook}{\hspace{-.1cm}\amalg\hspace{-.15cm}\bar{}}
+\newcommand{\scscs}{\scriptscriptstyle} 
+\newcommand{\scs}{\scriptstyle}
+
+
+
+
+\begin{document}
+
+\[ b_{p}^{2^n} =
+    \begin{cases}
+      b_{p}^{2^{n-1}}b_{p}^{2^{n-1}} & \text{if } p\le2^{n-1} \\
+	b_{p-2^{n-1}+1}^{2^{n-1}}b_{0}^{2^{n-1}} & \text{else if } p<2^{n} \\
+	1(2^{n}-1)0s & \text{if } p=2^{n}
+    \end{cases}
+\]\\
+
+
+
+\end{document}
+
+
+
